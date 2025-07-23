@@ -8,6 +8,7 @@ import FunctionalComponent from './components/functional-component'
 import Controlled from './components/input_field/ControlledComponents';
 import Input from './components/input_field/input';
 import Loops from './components/loops/Loops';
+import CollegeData from './components/loops/nestedLoop';
 import User from './components/loops/user';
 import ProductList from './components/products'
 import RadioButton from './components/Radio Buttons/radio';
@@ -36,6 +37,8 @@ function App() {
         <RadioButton/>
         <Loops/>
         <DropDown/>
+
+        <CollegeData/>
     </div>
   )
 }
