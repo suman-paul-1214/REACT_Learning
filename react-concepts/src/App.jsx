@@ -12,6 +12,7 @@ import CollegeData from './components/loops/nestedLoop';
 import User from './components/loops/user';
 import ProductList from './components/products'
 import RadioButton from './components/Radio Buttons/radio';
+import Demo from './components/useEffect/useEffect_insideComponent';
 import Users from './components/users';
 
 const DummyProductData =
@@ -39,6 +40,9 @@ function App() {
         <DropDown/>
 
         <CollegeData/>
+
+        //useEffect demo
+        <Demo/>
     </div>
   )
 }
