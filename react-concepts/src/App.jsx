@@ -12,6 +12,7 @@ import CollegeData from './components/loops/nestedLoop';
 import User from './components/loops/user';
 import ProductList from './components/products'
 import RadioButton from './components/Radio Buttons/radio';
+import StyleInline from './components/styling/inline';
 import Demo from './components/useEffect/useEffect_insideComponent';
 import Users from './components/users';
 
@@ -43,6 +44,9 @@ function App() {
 
         //useEffect demo
         <Demo/>
+
+        // Styling in react
+        <StyleInline/>
     </div>
   )
 }

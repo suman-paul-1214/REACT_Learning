@@ -5,10 +5,10 @@ const Demo=()=> {
   const [count, setCount] = useState(0);
   const [data, setData] = useState(0);
 
-  function callOnce() {
+  //function callOnce() {
     console.log("Button clicked!");
-  }
-  // callOnce() - this will be called on every render 
+  //}
+  // callOnce() - this will be called on every render
   //to handle side effects, we use useEffect hook
   useEffect(() => {
     //callOnce();
