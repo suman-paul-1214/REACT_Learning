@@ -1,4 +1,8 @@
+//import extranal css
+import React from 'react';
+//import './src/components/styling/External.css';
 
+import styled from 'styled-components';
 import './App.css'
 import Skills from './components/CheckBoxex/Skills';
 import ClassBasedComponent from './components/class-based-components'
@@ -15,6 +19,7 @@ import RadioButton from './components/Radio Buttons/radio';
 import StyleInline from './components/styling/inline';
 import Demo from './components/useEffect/useEffect_insideComponent';
 import Users from './components/users';
+import UserProfile from './components/users/UserProfile';
 
 const DummyProductData =
 ["Product 1",'Product 2','Product 3'];
@@ -22,6 +27,22 @@ const DummyProductData =
 
 
 function App() {
+
+  {/* declaring css modules 
+     yeh apne aap me hio component hote hai*/}
+  // const Heading =styled.h1`
+  // color:red;
+  // background-color: white`
+
+  //or
+
+  const Heading = styled.h1({
+    color:"red",
+  backgroundColor: 'white'
+  });
+
+  const StyledBtn = styled.button`
+  color:red`
 
   return (
     <div>
@@ -42,11 +63,23 @@ function App() {
 
         <CollegeData/>
 
-        //useEffect demo
+        {/* useEffect demo */}
         <Demo/>
 
-        // Styling in react
+        {/* Styling in react */}
         <StyleInline/>
+
+        {/* using external css */}
+        <h1 className='container'></h1>
+
+        
+        
+
+        <UserProfile />
+{/* using css modules */}
+        <Heading>Hello Styled Comnponent</Heading>
+        <Heading>dusri baar use</Heading>
+        <StyledBtn>hello Ji</StyledBtn>
     </div>
   )
 }
