@@ -1,7 +1,6 @@
 //import extranal css
 import React from 'react';
 //import './src/components/styling/External.css';
-
 import styled from 'styled-components';
 import './App.css'
 import Skills from './components/CheckBoxex/Skills';
@@ -20,6 +19,9 @@ import StyleInline from './components/styling/inline';
 import Demo from './components/useEffect/useEffect_insideComponent';
 import Users from './components/users';
 import UserProfile from './components/users/UserProfile';
+import UseRef from './components/useRef';
+import UnControlled from './components/unControlled Components/uncontrolled';
+import User2 from './components/fnx as prop/User';
 
 const DummyProductData =
 ["Product 1",'Product 2','Product 3'];
@@ -44,6 +46,16 @@ function App() {
   const StyledBtn = styled.button`
   color:red`
 
+  //
+
+  const displayName=(name)=>{
+    alert(`${name}`)
+  }
+
+  const getUser=()=>{
+    alert("get user function called")
+    
+  }
   return (
     <div>
       <h1>Jaan Ji</h1>
@@ -80,6 +92,22 @@ function App() {
         <Heading>Hello Styled Comnponent</Heading>
         <Heading>dusri baar use</Heading>
         <StyledBtn>hello Ji</StyledBtn>
+
+        <UseRef/> <br /><br />
+        <h2>Uncontrolled Component</h2>
+        <UnControlled/>
+
+        <h1>Call Parent component function from child component </h1>
+        <User2 displayName={displayName} name="suman" getUser={getUser}/>
+
+        <User2 displayName={displayName} name="anisha" getUser={getUser}/>
+        
+        <User2 displayName={displayName} name="rudra" getUser={getUser}/>
+        
+        <User2 displayName={displayName} name="jaan" getUser={getUser}/>
+        
+        <User2 displayName={displayName} name="meri jaan" getUser={getUser}/>
+
     </div>
   )
 }
