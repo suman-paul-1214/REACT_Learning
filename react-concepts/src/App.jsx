@@ -19,9 +19,11 @@ import StyleInline from './components/styling/inline';
 import Demo from './components/useEffect/useEffect_insideComponent';
 import Users from './components/users';
 import UserProfile from './components/users/UserProfile';
-import UseRef from './components/useRef';
 import UnControlled from './components/unControlled Components/uncontrolled';
 import User2 from './components/fnx as prop/User';
+import FwdRefParent from './components/Ref/FwdRef';
+import UseRef from './components/Ref/useRef';
+import FwdRef from './components/Ref/FwdRef';
 
 const DummyProductData =
 ["Product 1",'Product 2','Product 3'];
@@ -93,7 +95,8 @@ function App() {
         <Heading>dusri baar use</Heading>
         <StyledBtn>hello Ji</StyledBtn>
 
-        <UseRef/> <br /><br />
+        <UseRef/>
+         <br /><br />
         <h2>Uncontrolled Component</h2>
         <UnControlled/>
 
@@ -107,6 +110,8 @@ function App() {
         <User2 displayName={displayName} name="jaan" getUser={getUser}/>
         
         <User2 displayName={displayName} name="meri jaan" getUser={getUser}/>
+
+       <FwdRef/>
 
     </div>
   )
