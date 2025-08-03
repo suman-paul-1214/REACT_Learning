@@ -24,6 +24,9 @@ import User2 from './components/fnx as prop/User';
 import FwdRefParent from './components/Ref/FwdRef';
 import UseRef from './components/Ref/useRef';
 import FwdRef from './components/Ref/FwdRef';
+import UseFormStatus from './components/Hooks/useFormStatus';
+import UseTransitionHook from './components/Hooks/useTransitionHook';
+import DerivedState from './components/DerivedState/derivedState';
 
 const DummyProductData =
 ["Product 1",'Product 2','Product 3'];
@@ -112,7 +115,10 @@ function App() {
         <User2 displayName={displayName} name="meri jaan" getUser={getUser}/>
 
        <FwdRef/>
+        <UseFormStatus/>
+        <UseTransitionHook></UseTransitionHook>
 
+        <DerivedState/>
     </div>
   )
 }
