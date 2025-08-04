@@ -27,6 +27,9 @@ import FwdRef from './components/Ref/FwdRef';
 import UseFormStatus from './components/Hooks/useFormStatus';
 import UseTransitionHook from './components/Hooks/useTransitionHook';
 import DerivedState from './components/DerivedState/derivedState';
+import Parent from './components/lifting state up/parent';
+import Parent2 from './components/updating objects in state/Parent';
+import Parent3 from './components/updating array in state/Parent3';
 
 const DummyProductData =
 ["Product 1",'Product 2','Product 3'];
@@ -119,6 +122,13 @@ function App() {
         <UseTransitionHook></UseTransitionHook>
 
         <DerivedState/>
+
+        {/* lifting state up */}
+        <Parent/>
+        {/*updating objects in state*/}
+        <Parent2/>
+        {/* updating array in state */}
+        <Parent3/>
     </div>
   )
 }
