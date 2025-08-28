@@ -30,6 +30,8 @@ import DerivedState from './components/DerivedState/derivedState';
 import Parent from './components/lifting state up/parent';
 import Parent2 from './components/updating objects in state/Parent';
 import Parent3 from './components/updating array in state/Parent3';
+import Parent4 from './components/handle forms using useActionState/Parent4';
+import Parent5 from './components/generate unique id/parent5';
 
 const DummyProductData =
 ["Product 1",'Product 2','Product 3'];
@@ -129,6 +131,10 @@ function App() {
         <Parent2/>
         {/* updating array in state */}
         <Parent3/>
+        {/*handling forms with the help of useHandle Hook */}
+        <Parent4/>
+        {/*generating unidue id */}
+        <Parent5/>
     </div>
   )
 }
