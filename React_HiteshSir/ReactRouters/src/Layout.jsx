@@ -7,7 +7,7 @@ function Layout() {
   return (
     <>
     <Header/>
-    <Outlet/>
+    <Outlet/> // isko dene se automatically react router dom ke trf se nesting ki ja sakti hai ,it will show the children component
     <Footer/>
 
     </>

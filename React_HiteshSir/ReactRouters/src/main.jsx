@@ -5,7 +5,7 @@ import App from './App.jsx'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import Layout from './Layout.jsx'
 
-import {Home,About,Contact} from './components/index.js'
+import {Home,About,Contact,Users,Github} from './components/index.js'
 
 // const router = createBrowserRouter([
 //   {
@@ -34,8 +34,17 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<Home />} />
-      <Route path='about' element={<About />} />
+      <Route path='about' element={<About />} >
+        {/* <Route path='team' element={<Team />} /> */}
+        {/* aisa karne se about ke andar team ka route create ho jayega to we can access it via /about/team */}
+      </Route>
       <Route path='contact' element={<Contact />} />
+      <Route path='users/:id' element={<Users/>} />
+      <Route
+      
+      path='github' 
+      element={<Github/>}
+       />
     </Route>
   )
 )
